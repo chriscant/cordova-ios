@@ -211,6 +211,7 @@
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						ProvisioningStyle = Automatic;
+            DevelopmentTeam = __DEVELOPMENT_TEAM__; /* PHDCC */
 					};
 				};
 			};
@@ -390,6 +391,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				WK_WEB_VIEW_ONLY = 0;
+        CODE_SIGN_IDENTITY = 'iPhone Distribution';                 /* PHDCC */
+        CODE_SIGN_STYLE = Manual;
+        PROVISIONING_PROFILE_SPECIFIER = '__DEBUG_PROFILE_NAME__';
+        DEVELOPMENT_TEAM = __DEVELOPMENT_TEAM__;                    /* PHDCC */
 			};
 			name = Debug;
 		};
@@ -430,6 +435,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				WK_WEB_VIEW_ONLY = 0;
+        CODE_SIGN_IDENTITY = 'iPhone Distribution';                 /* PHDCC */
+        CODE_SIGN_STYLE = Manual;
+        PROVISIONING_PROFILE_SPECIFIER = '__RELEASE_PROFILE_NAME__';
+        DEVELOPMENT_TEAM = __DEVELOPMENT_TEAM__;                    /* PHDCC */
 			};
 			name = Release;
 		};
