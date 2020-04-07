@@ -168,13 +168,13 @@ function copyTemplateFiles (project_path, project_name, project_template_dir, pa
     // __DEVELOPMENT_TEAM__
     // __RELEASE_PROFILE_NAME__
     // __DEBUG_PROFILE_NAME__
-    var development_team = "ABCDEFGH";
+    var development_team = 'ABCDEFGH';
     var development_team_esc = development_team.replace(/&/g, '\\&');
     shell.sed('-i', /__DEVELOPMENT_TEAM__/g, development_team_esc, path.join(r + '.xcodeproj', 'project.pbxproj'));
-    var release_profile_name = "app-store-profile-name";
+    var release_profile_name = 'app-store-profile-name';
     var release_profile_name_esc = release_profile_name.replace(/&/g, '\\&');
     shell.sed('-i', /__RELEASE_PROFILE_NAME__/g, release_profile_name_esc, path.join(r + '.xcodeproj', 'project.pbxproj'));
-    var debug_profile_name = "adhoc-profile-name";
+    var debug_profile_name = 'adhoc-profile-name';
     var debug_profile_name_esc = debug_profile_name.replace(/&/g, '\\&');
     shell.sed('-i', /__DEBUG_PROFILE_NAME__/g, debug_profile_name_esc, path.join(r + '.xcodeproj', 'project.pbxproj'));
 }
